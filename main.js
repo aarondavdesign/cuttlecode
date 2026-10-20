@@ -41,3 +41,19 @@
   });
   desktop.addEventListener("change", (e) => { if (e.matches && isOpen()) close(); });
 })();
+
+// Hero monitor video: only play while on screen, and not at all for reduced motion.
+(() => {
+  const video = document.querySelector(".monitor__video");
+  if (!video) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (reduce.matches) {
+    video.removeAttribute("autoplay");
+    video.pause();
+    return;
+  }
+  new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) video.play().catch(() => {});
+    else video.pause();
+  }).observe(video);
+})();
