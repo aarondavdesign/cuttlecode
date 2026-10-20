@@ -433,7 +433,7 @@ body.menu-open { overflow: hidden; }
   gap: 90px;
   width: 100%;
   max-width: var(--max);
-  padding: 46px 0 64px; /* 136px in design, minus sticky header height */
+  padding: 60px 0 90px;
 }
 
 .hero__copy {
@@ -670,11 +670,9 @@ body.menu-open { overflow: hidden; }
 .footer__base {
   margin-top: 56px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  font-size: 14px;
   color: rgba(255, 255, 255, 0.48);
 }
-.footer__base p { margin: 0; }
+.footer__base p { margin: 0; font-size: 12px; text-align: center; }
 
 /* ---------- Responsive ---------- */
 
