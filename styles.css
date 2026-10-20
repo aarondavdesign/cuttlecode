@@ -66,7 +66,7 @@ main {
   height: 42px;
   border-radius: var(--radius-pill);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   white-space: nowrap;
   box-shadow: var(--shadow-float), var(--edge-highlight);
   backdrop-filter: blur(16px);
@@ -160,7 +160,7 @@ main {
 .nav__links a {
   height: 42px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 .nav__links .flip__text { padding: 0 12px; }
 
@@ -641,7 +641,8 @@ body.menu-open { overflow: hidden; }
   font-size: 16px;
   line-height: 1.48;
 }
-.footer__brand .cta { margin-top: 8px; }
+.footer__brand .cta { height: 44px; margin-top: 8px; font-size: 14px; }
+.footer__brand .cta .flip__text { padding: 0 20px 0 16px; }
 
 .footer__heading {
   margin: 0 0 20px;
