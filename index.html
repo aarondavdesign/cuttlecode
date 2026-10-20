@@ -22,37 +22,56 @@
 
     <nav class="nav glass" aria-label="Primary">
       <ul class="nav__links">
-        <li><a href="#product">Product</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#docs">Docs</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-        <li><a href="#changelog">Changelog</a></li>
+        <li><a class="flip" href="#product"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Product</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Product</span><span class="flip__text flip__text--accent">Product</span></span></span></a></li>
+        <li><a class="flip" href="#pricing"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Pricing</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Pricing</span><span class="flip__text flip__text--accent">Pricing</span></span></span></a></li>
+        <li><a class="flip" href="#docs"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Docs</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Docs</span><span class="flip__text flip__text--accent">Docs</span></span></span></a></li>
+        <li><a class="flip" href="#faqs"><span class="flip__inner"><span class="flip__default"><span class="flip__text">FAQs</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">FAQs</span><span class="flip__text flip__text--accent">FAQs</span></span></span></a></li>
+        <li><a class="flip" href="#changelog"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Changelog</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Changelog</span><span class="flip__text flip__text--accent">Changelog</span></span></span></a></li>
       </ul>
       <img class="nav__divider" src="assets/divider.svg" width="1" height="42" alt="" />
-      <a class="pill pill--ghost" href="#account">
-        <img src="assets/icon-account.svg" width="20" height="20" alt="" />
-        Account
-      </a>
+      <a class="pill pill--ghost flip" href="#account"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span><span class="flip__text flip__text--accent"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span></span></span></a>
     </nav>
 
     <div class="header__end">
-      <a class="pill pill--dark" href="#download">
-        <img src="assets/icon-download.svg" width="20" height="20" alt="" />
-        Download
-      </a>
+      <a class="pill pill--dark flip flip--violet" href="#download"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span><span class="flip__text flip__text--accent"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span></span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-open="false" hidden>
+    <div class="mobile-menu__content">
+      <div class="mobile-menu__chrome" aria-hidden="true"></div>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#product" aria-current="location">Product</a></li>
+          <li><a class="mobile-menu__link" href="#pricing">Pricing</a></li>
+          <li><a class="mobile-menu__link" href="#docs">Docs</a></li>
+          <li><a class="mobile-menu__link" href="#faqs">FAQs</a></li>
+          <li><a class="mobile-menu__link" href="#changelog">Changelog</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__actions">
+        <a class="mobile-menu__action mobile-menu__action--primary" href="#download">
+          <img src="assets/icon-apple.svg" width="24" height="24" alt="" />
+          Download for Mac
+        </a>
+        <a class="mobile-menu__action mobile-menu__action--secondary" href="#account">
+          <img src="assets/icon-account.svg" width="20" height="20" alt="" />
+          Account
+        </a>
+      </div>
+    </div>
+  </div>
 
   <main>
     <section class="hero" id="product">
       <div class="hero__copy">
-        <span class="tag">CuttleCode</span>
+        <span class="tag">AI coding harness</span>
         <h1 class="display display--xl">Do More with your Agents.</h1>
         <p class="lede">Bring Claude Code, Codex or whichever providers you already use, and get everything they are missing.</p>
-        <a class="cta" href="#download" id="download">
-          <img src="assets/icon-apple.svg" width="24" height="24" alt="" />
-          Download for Mac
-        </a>
+        <a class="cta flip flip--violet" href="#download" id="download"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span><span class="flip__text flip__text--accent"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span></span></span></a>
       </div>
       <div class="hero__art">
         <img src="assets/computer.png" width="884" height="1024" alt="Retro computer with stickers" />
@@ -89,5 +108,60 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__panel">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="/">
+            <img class="brand__logo" src="assets/logo.gif" width="52" height="42" alt="" />
+            <span class="brand__name">CuttleCode</span>
+          </a>
+          <p class="footer__tagline">Your agents. One command center.</p>
+          <a class="cta flip flip--violet" href="#download"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span><span class="flip__text flip__text--accent"><img src="assets/icon-apple.svg" width="24" height="24" alt="" />Download for Mac</span></span></span></a>
+        </div>
+
+        <nav class="footer__col" aria-label="Product">
+          <p class="footer__heading">Product</p>
+          <ul>
+            <li><a class="flip" href="/#product-tour"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Product Tour</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Product Tour</span><span class="flip__text flip__text--accent">Product Tour</span></span></span></a></li>
+            <li><a class="flip" href="/#fleet"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Sessions</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Sessions</span><span class="flip__text flip__text--accent">Sessions</span></span></span></a></li>
+            <li><a class="flip" href="/#intents"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Intents</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Intents</span><span class="flip__text flip__text--accent">Intents</span></span></span></a></li>
+            <li><a class="flip" href="/tour-transcript"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Tour Transcript</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Tour Transcript</span><span class="flip__text flip__text--accent">Tour Transcript</span></span></span></a></li>
+            <li><a class="flip" href="/download"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Download</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Download</span><span class="flip__text flip__text--accent">Download</span></span></span></a></li>
+            <li><a class="flip" href="/changelog"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Changelog</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Changelog</span><span class="flip__text flip__text--accent">Changelog</span></span></span></a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Platform">
+          <p class="footer__heading">Platform</p>
+          <ul>
+            <li><a class="flip" href="/#autonomy"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Autonomy</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Autonomy</span><span class="flip__text flip__text--accent">Autonomy</span></span></span></a></li>
+            <li><a class="flip" href="/#pipelines"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Pipelines</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Pipelines</span><span class="flip__text flip__text--accent">Pipelines</span></span></span></a></li>
+            <li><a class="flip" href="/#chatops"><span class="flip__inner"><span class="flip__default"><span class="flip__text">ChatOps</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">ChatOps</span><span class="flip__text flip__text--accent">ChatOps</span></span></span></a></li>
+            <li><a class="flip" href="/deep-dive"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Deep Dive</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Deep Dive</span><span class="flip__text flip__text--accent">Deep Dive</span></span></span></a></li>
+            <li><a class="flip" href="/docs"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Docs</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Docs</span><span class="flip__text flip__text--accent">Docs</span></span></span></a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Licensing">
+          <p class="footer__heading">Licensing</p>
+          <ul>
+            <li><a class="flip" href="/pricing"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Pricing</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Pricing</span><span class="flip__text flip__text--accent">Pricing</span></span></span></a></li>
+            <li><a class="flip" href="/licensing#noncommercial"><span class="flip__inner"><span class="flip__default"><span class="flip__text">PolyForm Noncommercial License</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">PolyForm Noncommercial License</span><span class="flip__text flip__text--accent">PolyForm Noncommercial License</span></span></span></a></li>
+            <li><a class="flip" href="/licensing#commercial"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Commercial Licensing</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Commercial Licensing</span><span class="flip__text flip__text--accent">Commercial Licensing</span></span></span></a></li>
+            <li><a class="flip" href="/privacy"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Privacy Policy</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Privacy Policy</span><span class="flip__text flip__text--accent">Privacy Policy</span></span></span></a></li>
+            <li><a class="flip" href="/terms"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Terms of Service</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Terms of Service</span><span class="flip__text flip__text--accent">Terms of Service</span></span></span></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__base">
+        <p>© 2026 CuttleCode</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
