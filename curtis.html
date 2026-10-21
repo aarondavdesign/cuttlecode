@@ -16,7 +16,7 @@
 <body class="page--fill">
   <header class="header">
     <a class="brand" href="index.html">
-      <img class="brand__logo" src="assets/curtis-floating.svg?v=2" width="52" height="42" alt="" />
+      <img class="brand__logo" src="assets/curtis-floating.svg?v=3" width="52" height="42" alt="" />
       <span class="brand__name">CuttleCode</span>
     </a>
 
@@ -67,17 +67,19 @@
 
   <main class="curtis">
     <h1 class="visually-hidden">Curtis animations</h1>
+    <!-- "&gallery" gives each tile its own URL: Safari shares one SVG document per URL,
+         and the header logo at a different size makes animated copies glitch. -->
     <ul class="curtis__grid">
       <li class="curtis__item">
-        <img src="assets/curtis-floating.svg?v=2" width="100" height="80" alt="Curtis floating" />
+        <img src="assets/curtis-floating.svg?v=3&amp;gallery" width="100" height="80" alt="Curtis floating" />
         <span class="curtis__label">Floating</span>
       </li>
       <li class="curtis__item">
-        <img src="assets/curtis-eyebrows.svg?v=1" width="100" height="80" alt="Curtis raising his eyebrows" />
+        <img src="assets/curtis-eyebrows.svg?v=1&amp;gallery" width="100" height="80" alt="Curtis raising his eyebrows" />
         <span class="curtis__label">Eyebrows</span>
       </li>
       <li class="curtis__item">
-        <img src="assets/curtis-finger.svg?v=1" width="100" height="80" alt="Curtis flipping the bird" />
+        <img src="assets/curtis-finger.svg?v=1&amp;gallery" width="100" height="80" alt="Curtis flipping the bird" />
         <span class="curtis__label">Middle Finger</span>
       </li>
     </ul>

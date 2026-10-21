@@ -1,6 +1,7 @@
 <svg width="300" height="240" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Curtis floating">
 <style>
-.curtis-f, .curtis-pupils, .curtis-blink { animation: 6700ms step-end infinite; }
+.curtis-bob, .curtis-f, .curtis-pupils, .curtis-blink { animation: 6700ms step-end infinite; }
+.curtis-bob { animation-name: curtis-bob; }
 .curtis-f { opacity: 0; }
 .curtis-f1 { animation-name: curtis-a1; opacity: 1; }
 .curtis-f2 { animation-name: curtis-a2; }
@@ -18,33 +19,39 @@
   100% { opacity: 0; }
 }
 @keyframes curtis-a1 {
-  0.000% { opacity: 1; transform: translateY(0px); }
-  2.985% { opacity: 0; transform: translateY(0px); }
-  14.925% { opacity: 1; transform: translateY(0px); }
-  17.910% { opacity: 1; transform: translateY(-2px); }
-  20.896% { opacity: 1; transform: translateY(-4px); }
-  25.373% { opacity: 1; transform: translateY(-2px); }
-  28.358% { opacity: 1; transform: translateY(0px); }
-  31.343% { opacity: 1; transform: translateY(2px); }
-  34.328% { opacity: 1; transform: translateY(4px); }
-  38.806% { opacity: 1; transform: translateY(2px); }
-  43.284% { opacity: 1; transform: translateY(0px); }
-  46.269% { opacity: 1; transform: translateY(-2px); }
-  49.254% { opacity: 1; transform: translateY(-4px); }
-  53.731% { opacity: 1; transform: translateY(-2px); }
-  56.716% { opacity: 1; transform: translateY(0px); }
-  59.701% { opacity: 1; transform: translateY(2px); }
-  62.687% { opacity: 1; transform: translateY(4px); }
-  67.164% { opacity: 1; transform: translateY(2px); }
-  71.642% { opacity: 1; transform: translateY(0px); }
-  74.627% { opacity: 1; transform: translateY(-2px); }
-  77.612% { opacity: 1; transform: translateY(-4px); }
-  82.090% { opacity: 1; transform: translateY(-2px); }
-  85.075% { opacity: 1; transform: translateY(0px); }
-  88.060% { opacity: 1; transform: translateY(2px); }
-  91.045% { opacity: 1; transform: translateY(4px); }
-  95.522% { opacity: 1; transform: translateY(2px); }
-  100% { opacity: 1; transform: translateY(2px); }
+  0.000% { opacity: 1; }
+  2.985% { opacity: 0; }
+  14.925% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes curtis-bob {
+  0.000% { transform: translateY(0px); }
+  2.985% { transform: translateY(0px); }
+  14.925% { transform: translateY(0px); }
+  17.910% { transform: translateY(-2px); }
+  20.896% { transform: translateY(-4px); }
+  25.373% { transform: translateY(-2px); }
+  28.358% { transform: translateY(0px); }
+  31.343% { transform: translateY(2px); }
+  34.328% { transform: translateY(4px); }
+  38.806% { transform: translateY(2px); }
+  43.284% { transform: translateY(0px); }
+  46.269% { transform: translateY(-2px); }
+  49.254% { transform: translateY(-4px); }
+  53.731% { transform: translateY(-2px); }
+  56.716% { transform: translateY(0px); }
+  59.701% { transform: translateY(2px); }
+  62.687% { transform: translateY(4px); }
+  67.164% { transform: translateY(2px); }
+  71.642% { transform: translateY(0px); }
+  74.627% { transform: translateY(-2px); }
+  77.612% { transform: translateY(-4px); }
+  82.090% { transform: translateY(-2px); }
+  85.075% { transform: translateY(0px); }
+  88.060% { transform: translateY(2px); }
+  91.045% { transform: translateY(4px); }
+  95.522% { transform: translateY(2px); }
+  100% { transform: translateY(2px); }
 }
 @keyframes curtis-eyes {
   0.000% { transform: translateX(0px); }
@@ -80,9 +87,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .curtis-f, .curtis-pupils, .curtis-blink { animation: none; }
+  .curtis-bob, .curtis-f, .curtis-pupils, .curtis-blink { animation: none; }
 }
 </style>
+<g class="curtis-bob">
 <g class="curtis-f curtis-f1">
 <mask id="stroke0_692_530" maskUnits="userSpaceOnUse" x="84.3789" y="49.6431" width="35" height="91" fill="black">
 <rect fill="white" x="84.3789" y="49.6431" width="35" height="91"/>
@@ -129,6 +137,7 @@
 <path d="M76.9404 59.147C76.9404 71.5313 69.4108 81.5708 60.1225 81.5708C50.8343 81.5708 43.3047 71.5313 43.3047 59.147L43.3047 53.147L76.9404 53.147L76.9404 59.147Z" fill="#8F48F5"/>
 <path d="M114.082 53.541L114.082 59.147C114.082 66.4348 111.873 73.2487 108.035 78.3668C104.195 83.4864 98.4623 87.1767 91.6582 87.1767C84.854 87.1767 79.1216 83.4864 75.2817 78.3668C71.4431 73.2487 69.2344 66.4348 69.2344 59.147L69.2344 53.541L114.082 53.541ZM74.8403 59.147C74.8403 71.5313 82.3699 81.5707 91.6582 81.5707C100.946 81.5707 108.476 71.5313 108.476 59.147L74.8403 59.147Z" fill="black"/>
 <path d="M108.476 59.147C108.476 71.5313 100.946 81.5708 91.6577 81.5708C82.3694 81.5708 74.8398 71.5313 74.8398 59.147L74.8398 53.147L108.476 53.147L108.476 59.147Z" fill="#8F48F5"/>
+</g>
 </g>
 </g>
 <g class="curtis-f curtis-f2">
