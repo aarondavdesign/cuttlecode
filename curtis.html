@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curtis — CuttleCode</title>
+  <meta name="description" content="Every Curtis animation in one place." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page--fill">
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/curtis-floating.svg?v=2" width="52" height="42" alt="" />
+      <span class="brand__name">CuttleCode</span>
+    </a>
+
+    <nav class="nav glass" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a class="flip" href="index.html#product"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Product</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Product</span><span class="flip__text flip__text--accent">Product</span></span></span></a></li>
+        <li><a class="flip" href="index.html#pricing"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Pricing</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Pricing</span><span class="flip__text flip__text--accent">Pricing</span></span></span></a></li>
+        <li><a class="flip" href="index.html#docs"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Docs</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Docs</span><span class="flip__text flip__text--accent">Docs</span></span></span></a></li>
+        <li><a class="flip" href="index.html#faqs"><span class="flip__inner"><span class="flip__default"><span class="flip__text">FAQs</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">FAQs</span><span class="flip__text flip__text--accent">FAQs</span></span></span></a></li>
+        <li><a class="flip" href="index.html#changelog"><span class="flip__inner"><span class="flip__default"><span class="flip__text">Changelog</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text">Changelog</span><span class="flip__text flip__text--accent">Changelog</span></span></span></a></li>
+      </ul>
+      <img class="nav__divider" src="assets/divider.svg" width="1" height="42" alt="" />
+      <a class="pill pill--ghost flip" href="index.html#account"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span><span class="flip__text flip__text--accent"><img src="assets/icon-account.svg" width="20" height="20" alt="" />Account</span></span></span></a>
+    </nav>
+
+    <div class="header__end">
+      <a class="pill pill--dark flip flip--violet" href="index.html#download"><span class="flip__inner"><span class="flip__default"><span class="flip__text"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span></span><span class="flip__hover" aria-hidden="true"><span class="flip__bg"></span><span class="flip__text"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span><span class="flip__text flip__text--accent"><img src="assets/icon-download.svg" width="20" height="20" alt="" />Download</span></span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-open="false" hidden>
+    <div class="mobile-menu__content">
+      <div class="mobile-menu__chrome" aria-hidden="true"></div>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="index.html#product">Product</a></li>
+          <li><a class="mobile-menu__link" href="index.html#pricing">Pricing</a></li>
+          <li><a class="mobile-menu__link" href="index.html#docs">Docs</a></li>
+          <li><a class="mobile-menu__link" href="index.html#faqs">FAQs</a></li>
+          <li><a class="mobile-menu__link" href="index.html#changelog">Changelog</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__actions">
+        <a class="mobile-menu__action mobile-menu__action--primary" href="index.html#download">
+          <img src="assets/icon-apple.svg" width="24" height="24" alt="" />
+          Download for Mac
+        </a>
+        <a class="mobile-menu__action mobile-menu__action--secondary" href="index.html#account">
+          <img src="assets/icon-account.svg" width="20" height="20" alt="" />
+          Account
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="curtis">
+    <h1 class="visually-hidden">Curtis animations</h1>
+    <ul class="curtis__grid">
+      <li class="curtis__item">
+        <img src="assets/curtis-floating.svg?v=2" width="100" height="80" alt="Curtis floating" />
+        <span class="curtis__label">Floating</span>
+      </li>
+      <li class="curtis__item">
+        <img src="assets/curtis-eyebrows.svg?v=1" width="100" height="80" alt="Curtis raising his eyebrows" />
+        <span class="curtis__label">Eyebrows</span>
+      </li>
+      <li class="curtis__item">
+        <img src="assets/curtis-finger.svg?v=1" width="100" height="80" alt="Curtis flipping the bird" />
+        <span class="curtis__label">Middle Finger</span>
+      </li>
+    </ul>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
